@@ -1,442 +1,136 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+    <!--change the title of the page here! this will appear as the title at your current tab.-->
+    <title>temperance</title>
  
-<!-- octomoosey @ tumblr -->
+    <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head><title>{Title}</title>
-<link rel="shortcut icon" href="{Favicon}">
-<link rel="alternate" type="application/rss+xml" href="{RSS}">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    var totWidth=0;
-    var positions = new Array();
-
-    $('#slides .slide').each(function(i){
-        positions[i]= totWidth;
-        totWidth += $(this).width();
-
-        if(!$(this).width())
-        {
-            alert("");
-            return false;
-        }
-    });
-
-    $('#slides').width(totWidth);
-
-    $('#menu ul li a').click(function(e){
-        $('li.menuItem').removeClass('act').addClass('inact');
-        $(this).parent().addClass('act');
-        var pos = $(this).parent().prevAll('.menuItem').length;
-        $('#slides').stop().animate({marginLeft:-positions[pos]+'px'},800);
-        e.preventDefault();
-    });
-
-    $('#menu ul li.menuItem:first').addClass('act').siblings().addClass('inact');
-});</script>
-   
-    <style type='text/css'>
-
-::-webkit-scrollbar-thumb {
-height:auto;
-background-color:#529ecc;} /** change scrollbar color here **/
+    <!--
  
-::-webkit-scrollbar {
-height:9px;
-width:4px;
-background-color:transparent;}
- 
-iframe#tumblr_controls {
-right:3px !important;
-position: fixed !important;
--webkit-transition: opacity 0.7s
-linear;opacity: 0.2;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;}
- 
-iframe#tumblr_controls:hover{
--webkit-transition: opacity 0.7s linear;
-opacity: 1;
--webkit-transition: all 0.4s ease-out;
--moz-transition: all 0.4s ease-out;
-transition: all 0.4s ease-out;}
- 
-body {
-    background-color:#000; /* background color */
-    background-image: url('http://static.tumblr.com/83871df73f5288609f8f606af58fc0e0/86jccts/pAFnp67md/tumblr_static_3wi0ufdz3qasow0kc4scok4gk.jpg'); /** change background image url here **/
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    line-height:110%;
-    color:#fff;              /* text color */
-    font-family:baskerville; /** font style **/
-    font-size: 12px;}        /** font size **/
- 
-a {
-    text-decoration:none;
-    outline:none;
-    -moz-outline-style:none;
-    color:#529ecc;         /** change link color here **/
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;}
- 
-a:hover {
-    color:#eee;            /** change link hover color here **/
-     -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;}
-   
-blockquote {
-    padding:2px 7px;
-    margin:3px 0 3px 8px;
-    border-left:1px dashed #fff;
-    background-color:transparent;}
-   
-blockquote img {
-    max-width:100%;
-    height:auto;}
-   
-b, strong {
-    color:#529ecc;}      /** change bold text color here **/
- 
-i, em {
-    color:#529ecc;}      /** change italic text color here **/
-
-
-h1 {
-    text-align:right;
-    font-size:18px;
-    padding-bottom:10px;
-    font-weight: bold;}
- 
-h2 {
-    color:#529ecc;        /** change heading 2 color here **/
-    text-align:right;
-    font-style:italic;
-    font-size:16px;
-    padding-bottom:10px;
-    font-weight: bold;}
+    Page #03: Temperance
+    coded by pneuma-themes
     
-.wrap{    
-    position:absolute;
-    margin-top: 100px;
-    left: 50%;
-    margin-left:-522px; 
-    width: 1000px;}
-   
-#credit {
-    bottom:25px;
-    right:25px;
-    opacity:0.5;
-    position:fixed;
-    padding:5px;}
-
-#slides{
-    height:500px;
-    width:540px;
-    overflow:hidden;} 
-
-.slide{
-    float:left;} 
-
-#sider {
-    position:fixed;
-    margin-left:815px;
-    height:500px;
-    width:200px;}
+    1. Don't remove the credit.
+    2. Don't move the credit. Just leave it there.
+    3. Don't use as a base code.
+    4. Please enjoy! If you find any bugs, please contact me! c:
     
-#menu{
-    padding:0px;}
-
-ul{
-    height:35px;
-    margin:0px;
-    padding:0px;
-    list-style:none !important;}
-
-li{ 
-    padding-top:8px;
-    font-size:30px;
-    line-height:33px;
-    display:block}
-
-li a {
-    width:35px;
-    overflow:hidden;
-    display:block;
-    text-decoration: none;
-    white-space: nowrap;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;}
-    
-li a:hover {
-    width:200px;
-    -webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;}
-
-.slide{
-	float:left;
-	width: 540px;
-	text-align:justify;
-	height: 500px;
-	overflow-y:scroll;}
-
-.slidetx {
-    padding:20px}
-
-#container{
-    border-top:1px solid #fff;      /** change top border color here **/
-    border-bottom:1px solid #fff;   /** change bottom border color here **/
-	margin-left:250px;
-	text-align:justify;
-	width:540px;
-	height: 500px;
-	position:fixed;
-	background-color: transparent;
-	overflow:hidden;}
-
-#nav {
-    text-align:center;}
-
-#nav a {
-    display:block;
-    font-size:9px;
-    line-height:15px;
-    text-align:center;
-    margin-top:8px;
-    padding:2px;
-    letter-spacing:1px;
-    border:1px solid #fff;/** change navigation page link border color **/
-    color:#fff; /** change navigation page link text color here **/
-    width:500px;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -ms-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;}
-
-#nav a:hover {
-    border:1px solid #fff; /** change link hover border color here **/
-    box-shadow:inset 504px 0 0 #fff;  /** change link fill color here **/
-    color:#000;            /** change link text hover color here **/
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -ms-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;}
-    
-table {
-    margin-top:-9px;
-    width: 100%;
-    margin-left:-2px;
-    background-color: transparent;
-    border-collapse: collapse;}
+  -->
  
-td {  
-    font-size: 11px;
-    letter-spacing: 1px;
-    height: 100px;
-    overflow: auto;} 
-    
-#rel img {
-    margin:8px;
-    border:5px solid #fff; /* relationships icon border color */
-    width:80px;
-    height:80px;
-    padding:5px;
-    -webkit-transition:all 0.3s ease-out;
-    -moz-transition:all 0.3s ease-out;
-    transition:all 0.3s ease-out;}
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+        href="https://fonts.bunny.net/css?family=rubik:400,400i,700,700i"
+        rel="stylesheet"
+    />
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css" />
  
-#rel:hover img {
-    border:5px solid #529ecc; /* relationships icon border hover color */
-    -webkit-transition:all 0.3s ease-out;
-    -moz-transition:all 0.3s ease-out;
-    transition:all 0.3s ease-out;}
+    <head>
+        <link rel="stylesheet" href="style.css">
 
-#links{
-    margin-left:595px;  }
-
-</style>
-</head>
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="sidebar">
+                <div id="sidebar-content">
+                    <div id="sidebar-image">
+                        <!--change your sidebar image here!-->
+                        <img
+                            src="https://jasminecha.com/me.png"
+                        />
+                    </div>
+                    <div id="desc">
+                        <i class="bx bxs-quote-alt-left"></i>
+                        <div id="desc-text">
+                            <!--this is the description box-->
+                            Be a voice, not an echo.
+                        </div>
+                    </div>
+                    <!--end desc-->
  
-<body>
-<div class="wrap">
-<div id="links"><a href="/">home</a> ♦
-<a href="/ask">ask</a> ♦
-<a href="/submit">submit</a> ♦
-<a href="/archive">archive</a> ♦
-<a href="https://www.tumblr.com/dashboard">dash</a> </div>
-<div id="sider">
-<div id="menu">
+                    <div id="other-links">
+                        <!--to add more links, copy from here-->
 
-<ul>
+                        
+                        <div class="other-links">
+                            <i class="bx bxl-linkedin"></i><a href="https://www.linkedin.com/in/jasminetea/">linkedin</a>
+                        </div>
+			<div class="other-links">
+                            <i class="bx bxl-instagram"></i><a href="https://www.instagram.com/jasmine.not.yours">instagram</a>
+                        </div>
+                        <!--before this line-->
+                    </div>
+                    <!--end other links-->
+ 
+                    <!--this is the custom links. you can add as much or not add anything. if you want to delete this section altogether, then just comment the entire section from here-->
+                    <div id="custom-links">
+                        <div class="custom-links">
+                            <a href="https://docs.google.com/document/d/1lU9XOckxaAlSk8HvAaYTJoeV4Za5qnFx5SMBNFI6Hu8/edit?usp=sharing">curriculum vitae</a>
+                            <a href="">link two</a>
+                            <a href="">link three</a>
+                            <a href="">link four</a>
+                            <a href="">link five</a>
+                            <a href="">link six</a>
+                        </div>
+                    </div>
+                    <!--end custom-links-->
+                    <!--to here-->
+                </div>
+            </div>
+            <!--end sidebar-->
+ 
+            <div id="about">
+                <div id="about-info">
+                    <div id="about-info-text">
+                        <div class="about-info-rows">
+                            <div class="about-info-label">
+                                name
+                                <!--change the label here-->
+                            </div>
+                            Jasmine Cha 차은비
+                        </div>
+                        <div class="about-info-rows">
+                            <div class="about-info-label">timezone</div>
+                            gmt -6
+                        </div>
+                        <div class="about-info-rows">
+                            <div class="about-info-label">title</div>
+                            Rising Tech Policy Specialist
+                        </div>
+                        <div class="about-info-rows">
+                            <div class="about-info-label">pronouns</div>
+                            she/her/hers
+                        </div>
+                    </div>
+                </div>
+                <!--end about info header-->
+                <div id="about-text">
+<div id="Content_Area">
+	Hello and welcome! This is the live preview of <b>Temperance</b>, another about page by <a href="//pneuma-themes.tumblr.com">@pneuma-themes</a>. This is a contained about page with <i>social media</i>, <i>description</i>, and <i>custom links</i> sections on the sidebar and a short information about yourself above this body of text. This is the result of an attempt to get back into the groove of coding again and out of the slump I've been in for some time.
+                    
+	<blockquote><b>Temperance:</b> <i>noun,</i> moderation or self-restraint in action, statement, etc.; self-control, or:
+                    <br>one of the major arcana cards in tarot. Numbered XIV in modern tarot, VII or VIII in earlier Italian tarot. In Thoth-tarot related decks, this card is instead called <i>Art.</i></blockquote>
 
-
-<!-- if you add another 'page' be sure to add a link here -->
-<li class="menuItem"><a href="">01. about</a></li>
-<li class="menuItem"><a href="">02. info</a></li>
-<li class="menuItem"><a href="">03. navigation</a></li>
-<li class="menuItem"><a href="">04. relationships</a></li>
-<li class="menuItem"><a href="">05. verses</a></li>
-
-</ul>
-</div>
-</div>
-<div id="container">
-<div id="slides">
-
-
-<!-- this is the start of the first slide -->
-<div class="slide"><div class="slidetx">
-
-<h1>H i s t o r y</h1>
-
-<b>You can add as much text as you like and any images - the box will add a scroll bar when needed!</b><p>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
-
-<img src="https://31.media.tumblr.com/2603c3495b0ddd29fbe671dc025dae06/tumblr_inline_nc7gtzdnQL1si7bjl.gif">
-
-<h1>T o d a y</h1>
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-</div></div>
-
-<!-- end of the first slide - copy from start to end and paste below to ass more pages -->
-
-
-<div class="slide"><div class="slidetx">
-
-<h1>D i s c l a i m e r;</h1>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<h1>G u i d e l i n e s || R u l e s;</h1>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<h1>C r e d i t s;</h1>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
+In the line of me naming my codes on abilities from a certain game, this is named after an ability in said game which is affectionately called "wings" by players because it does, in fact, grant wings to the caster.
 
 </div></div>
-
-<div class="slide"><div class="slidetx">
-<h2>section title</h2>
-<div id="nav">
-<a href="">links go here</a> 
-<a href="">more links</a> 
-<a href="">even more...</a>
-</div>
-
-<h2>another section</h2>
-<div id="nav">
-<a href="">you can even add them in sections</a> 
-<a href="">more links</a> 
-<a href="">even more...</a> 
-<a href="">add as many links as you like</a>
-<a href="">to each section</a>
-</div>
-
-<h2>and another</h2>
-<div id="nav">
-<a href="">another one</a> 
-<a href="">more links</a> 
-<a href="">even more...</a> 
-</div>
-
-</div></div>
-
-<div class="slide"><div class="slidetx">
-<table>
+            </div>
+        </div>
  
-<!-- character one starts here -->
- 
-<tr><td> <div id="rel">
- 
-<a href="/"><!-- add the character link here -->
- 
-<!-- add the url to the icon here -->
-<img src="https://41.media.tumblr.com/2288e3b9f1673609d6c6eda1606d54de/tumblr_inline_np64h3Xz5S1rp2lgk_540.jpg" /></a></div></td>
- 
-<!-- add your description here -->
-<td><div style="height:100px; overflow:auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></td></tr>
- 
-<!-- character one ends here - copy from start to end and paste to add more characters -->
-     
-<tr><td>  <div id="rel">
- 
-<a href="/">
- 
-<img src="https://41.media.tumblr.com/6ad7b11365c6db7155acab6661a4a384/tumblr_inline_np64hmSUVz1rp2lgk_540.jpg" /></a></div></td>
-       
-<td><div style="height:100px; overflow:auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></td></tr>
-         
-<tr><td>  <div id="rel">
- 
-<a href="/">
- 
-<img src="https://40.media.tumblr.com/89889431a63e7f0b40a3c795b1428c9f/tumblr_inline_np64hxwfwj1rp2lgk_540.jpg" /></a></div></td>
-       
-<td><div style="height:100px; overflow:auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></td></tr>
- 
-
-       
-</table>
-    
-</div>
-
-</div>
-
-<div class="slide"><div class="slidetx">
-<table>
- 
-<!-- verses page works the same as the character page! -->
- 
-<tr><td> <div id="rel">
- 
-<a href="/">
-
-<img src="https://41.media.tumblr.com/2288e3b9f1673609d6c6eda1606d54de/tumblr_inline_np64h3Xz5S1rp2lgk_540.jpg" /></a></div></td>
- 
-
-<td><div style="height:100px; overflow:auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></td></tr>
-     
-<tr><td>  <div id="rel">
- 
-<a href="/">
- 
-<img src="https://41.media.tumblr.com/6ad7b11365c6db7155acab6661a4a384/tumblr_inline_np64hmSUVz1rp2lgk_540.jpg" /></a></div></td>
-       
-<td><div style="height:100px; overflow:auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></td></tr>
-         
-<tr><td>  <div id="rel">
- 
-<a href="/">
- 
-<img src="https://40.media.tumblr.com/89889431a63e7f0b40a3c795b1428c9f/tumblr_inline_np64hxwfwj1rp2lgk_540.jpg" /></a></div></td>
-       
-<td><div style="height:100px; overflow:auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></td></tr>
-       
-</table>
-    
-</div>
-
-</div>
-
-</div>
-</div> 
-</div>
-<div id="credit"><a href="http://octomoosey.tumblr.com/" title="theme by octomoosey"><img src="https://31.media.tumblr.com/ce8b580be9fa9afaa442fdb216c9b293/tumblr_inline_nj1tziQKpe1ronkfd.png"></a></div><!-- do not remove -->
-</body>
+        <!--please don't touch this!-->
+        <div id="credit">
+            <a
+                href="//pneuma-themes.tumblr.com"
+                data-balloon-pos="left"
+                aria-label="temperance by pneuma-themes"
+                ><i class="bx bx-code"></i
+            ></a>
+        </div>
+    </body>
 </html>
