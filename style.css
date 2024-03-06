@@ -133,11 +133,11 @@ ul#custom-links {
                 padding-bottom: 20px;
 }
 
-ul#custom-links li.active {
+#custom-links ul li.active {
 text-decoration: underline;
 }
 
-ul#custom-links li:hover{
+#custom-links ul li:hover{
 text-decoration: underline;
 }
 
