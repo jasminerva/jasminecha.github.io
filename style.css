@@ -150,7 +150,7 @@ box-shadow: 0 -10px inset var(--Accent);
             .other-links {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-around;
                 padding: 8px;
                 margin-bottom: 2px;
             }
