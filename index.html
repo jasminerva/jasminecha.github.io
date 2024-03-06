@@ -32,18 +32,20 @@
     <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css" />
  
     <head>
-<script src="showhide.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-$('.show_hide').showHide({ 
-speed: 1000,  // speed you want the toggle to happen
-easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
-changeText: 1, // if you dont want the button text to change, set this to 0
-showText: 'Lyrics',// the button text to show when a div is closed
-hideText: 'Hide' // the button text to show when a div is open
-}); 
+<script>
+$("#tabs").tabs({
+show: function(event, ui) {
+var $target = $(ui.panel);
+
+$('.content:visible').effect(
+'explode',
+{},
+1500,
+function(){
+$target.fadeIn();
 });
-</script>
+}
+});</script>
         <link rel="stylesheet" href="style.css">
 
     </head>
@@ -123,7 +125,18 @@ hideText: 'Hide' // the button text to show when a div is open
                 </div>
                 <!--end about info header-->
                 <div id="about-text">
-                   <iframe src="https://jasminecha.com/main.html" style="border:0px #ffffff hidden;" name="myiFrame" scrolling="yes" frameborder="0" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+                    Hello and welcome! This is the live preview of <b>Temperance</b>, another about page by <a href="//pneuma-themes.tumblr.com">@pneuma-themes</a>. This is a contained about page with <i>social media</i>, <i>description</i>, and <i>custom links</i> sections on the sidebar and a short information about yourself above this body of text. This is the result of an attempt to get back into the groove of coding again and out of the slump I've been in for some time.
+                    
+                    <blockquote><b>Temperance:</b> <i>noun,</i> moderation or self-restraint in action, statement, etc.; self-control, or:
+                    <br>one of the major arcana cards in tarot. Numbered XIV in modern tarot, VII or VIII in earlier Italian tarot. In Thoth-tarot related decks, this card is instead called <i>Art.</i></blockquote>
+
+In the line of me naming my codes on abilities from a certain game, this is named after an ability in said game which is affectionately called "wings" by players because it does, in fact, grant wings to the caster.
+<br><br>
+The features of this page are as the following:
+<ul><li>A full-width sidebar image. The size of your sidebar image is 30% of the 80% of your screen width x 300px. To help find how wide your sidebar image needs to be, you can use <b>Inspect</b> (click right, then inspect on your browser window) on the sidebar.</li><li>A description on the sidebar.</li><li>A section for social media links.</li><li>A section for however many custom links you need. Depending on your screen width, you may have up to 10 custom links (or even more if you're using an ultra-wide monitor).</li><li>A short about info.</li><li>Unlimited space to write about yourself, as long or as short as you would like it to be.</li><li>All the icon fonts used here are customizable! Please refer to the code post to learn more.</li></ul>
+This page is <b>Javascript free</b>, yay! This means you should be able to use this page without having to ask for permission to Tumblr staff, since nothing here uses or are delivered via Javascript. Also since this is a <u>page</u> theme, your blog post will <i>not</i> be displayed! Please install this via the Add New Page link on the Customize dashboard.
+<br><br>
+I hope you like and enjoy this page! Feel free to hit me up on my askbox if you need help. If you enjoy this page, consider liking and reblogging the post to help us thememakers out here :)
                 </div>
             </div>
         </div>
