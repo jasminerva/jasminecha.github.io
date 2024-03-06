@@ -124,7 +124,7 @@
                 border-bottom: none !important;
             }
 #custom-links ul {
-		
+		list-style-type: none;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -138,10 +138,12 @@
 }
 
 #custom-links ul li.active {
+list-style-type: none;
 text-decoration: underline;
 }
 
 #custom-links ul li:hover{
+list-style-type: none;
 text-decoration: underline;
 }
 
