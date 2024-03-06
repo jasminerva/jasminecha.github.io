@@ -30,27 +30,12 @@
         rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css" />
- 
+
+    <head>
 <!-- TABBED CONTENT -->
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 <!--/ TABBED CONTENT -->
-
-    <head>
-<script>
-$("#tabs").tabs({
-show: function(event, ui) {
-var $target = $(ui.panel);
-
-$('.content:visible').effect(
-'explode',
-{},
-1500,
-function(){
-$target.fadeIn();
-});
-}
-});</script>
         <link rel="stylesheet" href="style.css">
 
     </head>
