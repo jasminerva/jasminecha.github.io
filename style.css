@@ -125,28 +125,6 @@
                 border-bottom: none !important;
 		text-align: center;
             }
-#custom-links ul {
-		list-style-type: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin-top: 20px;
-                font-weight:700;
-                text-transform:uppercase;
-		text-align: center;
-}
-
-#custom-links ul li.active {
-list-style-type: none;
-box-shadow: 0 -10px inset var(--Accent);
-}
-
-#custom-links ul li:hover{
-list-style-type: none;
-box-shadow: 0 -10px inset var(--Accent);
-}
-
             .other-links {
                 display: flex;
                 align-items: center;
