@@ -170,20 +170,6 @@ padding-right:3px;
 text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-#custom-links #Content_Area {
-background-color: #ffffff;
-clear:both;
-line-height:18px;
-position: relative;
-top: -120px;
-z-index: 5;
-height: 90%;
-width:500px;
-overflow-y:auto;
-overflow-x:hidden;
-margin:0;
-}
-
             .other-links {
                 display: flex;
                 align-items: center;
@@ -245,7 +231,7 @@ margin:0;
                 border-radius: 2px;
             }
  
-            #about-text {
+#Content_Area {
                 padding: 20px;
                 overflow-y: scroll;
                 overflow-x: hidden;
