@@ -1,3 +1,4 @@
+
 <!-- 
     
     - about page 'fashion' by skye southcodes.tumblr.com
@@ -9,29 +10,29 @@
     - fonts by google
     - icon font by https://feathericons.com/
     
-    - design by https://dribbble.com/shots/14013228-web-design/attachments/5629278?mode=media
- 
+    - inspiration https://dribbble.com/shots/14013228-web-design/attachments/5629278?mode=media
+
  -->
 <!DOCTYPE html>
 <html>
-<head>
-    <title>{title}</title>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+	<title>SouthCodes's Previews</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <link rel="shortcut icon" href="{favicon}">
-    <meta name="description" content="{MetaDescription}"/>
- 
+    <style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="stylesheet" media="screen" href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=f085dde138e244526309d4673db67b4c"><link rel="shortcut icon" href="https://assets.tumblr.com/images/default_avatar/pyramid_closed_128.png">
+    <meta name="description" content=""/>
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
- 
+
     <!-- normalize -->
     <link href="https://necolas.github.io/normalize.css/7.0.0/normalize.css" rel="stylesheet">
     
 <style>
- 
+
 :root {
     --background:#eee;
     --boxes-background:#fff;
@@ -45,11 +46,11 @@
 }
   
 .tmblr-iframe {display: none;}
- 
+
 ::-webkit-scrollbar-thumb:vertical {border-left:2px solid var(--accent);}
 ::-webkit-scrollbar {width:6px}
 ::-webkit-scrollbar-track-piece{margin:15px 0;}
- 
+
 pre {font-family:consolas;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -67,7 +68,7 @@ blockquote {margin:0;padding:0;}
 img {max-width:100%;height: auto;display: block;margin:0}
 hr {border:0;border-top:1px solid var(--borders);margin:0;}
 nav ul,nav li {list-style-type:none;margin:0;padding:0;}
- 
+
 #color-square {
     background-color: var(--color-square);
     max-width: 70vh;
@@ -78,9 +79,9 @@ nav ul,nav li {list-style-type:none;margin:0;padding:0;}
     inset: auto 0 0 auto;
     z-index: -1;
 }
- 
+
 /* containers */
- 
+
 #flex-container {
     display: flex;
     align-items: center;
@@ -89,9 +90,9 @@ nav ul,nav li {list-style-type:none;margin:0;padding:0;}
     height: 100vh;
     flex-direction: column;
 }
- 
+
 /* sidebar */
- 
+
 aside {
     width: 35rem;
     display: flex;
@@ -101,7 +102,7 @@ aside {
     overflow: auto;
     padding: 2rem 0;
 }
- 
+
 .about-icon {
     width: 4rem;
     height: 4rem;
@@ -109,13 +110,13 @@ aside {
     object-fit: cover;
     margin-bottom: 1rem;
 }
- 
+
 img.about-icon {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
- 
+
 h1 {
     text-align: center;
     transform: rotate(180deg);
@@ -123,7 +124,7 @@ h1 {
     font: 600 2rem 'montserrat', sans-serif;
     letter-spacing: .2rem;
 }
- 
+
 h1:after {
     content: '';
     width: 3px;
@@ -132,7 +133,7 @@ h1:after {
     position: absolute;
     top: -1rem;left:-2rem;
 }
- 
+
 #sidebar-navigation {
     width: 100%;
     font-size: .9rem;
@@ -141,14 +142,14 @@ h1:after {
     padding:1rem 1.5rem;
     border-top: 1px solid var(--borders);
 }
- 
+
 #sidebar-navigation li {
     margin:4rem 0 0;
     position: relative;
     letter-spacing: .05rem;
 }
 #sidebar-navigation li:first-of-type {margin-top: 1.5rem;}
- 
+
 #sidebar-navigation li:after {
     content: '';
     width: 1.9rem;
@@ -157,11 +158,11 @@ h1:after {
     position: absolute;
     inset: -2rem 0 auto auto;
 }
- 
+
 #sidebar-navigation li:first-of-type:after {display: none;}
- 
+
 /* main */
- 
+
 main {
     display: flex;
     width:90%;
@@ -172,7 +173,7 @@ main {
     padding-right: 3rem;
     background-color: var(--boxes-background);
 }
- 
+
 #main-content {
     display: flex;
     flex-direction: column;
@@ -180,38 +181,38 @@ main {
     height: 80%;
     max-height: 40rem;
 }
- 
-/*  navigation  */  
- 
+
+/*	navigation  */  
+
 #main-navigation {
     width: 100%;
     height: 6rem;
     padding: 0 2rem;
     letter-spacing: .03rem;
 }
- 
+
 #main-navigation ul {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
- 
+
 #main-navigation li {margin-left: 5rem;}
- 
+
 .nav-icon {width: 17px;}
- 
+
 /* main content */
- 
+
 #main-content {
     height: calc(100% - 6rem);
     width: 100%;
     display: flex;
     flex-direction: row;
 }
- 
+
 /* about text */
- 
+
 #about {
     width: 50%;
     height: 90%;
@@ -219,14 +220,14 @@ main {
     padding: 0;
     overflow: auto;
 }
- 
+
 /* about details */
- 
+
 #about-details {
     list-style: none;
     margin-bottom: 2rem;
 }
- 
+
 #about-details li {
     position: relative;
     margin:1rem 0;
@@ -240,63 +241,63 @@ main {
     height: 1px;
     background-color: var(--accent);
 }
- 
+
 /* about image */
- 
+
 figure.about-image {
     height: 100%;
     width: 40%;
 }
- 
+
 img.about-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
- 
+
 /* MEDIA */
- 
+
 @media only screen and (min-width:0px) and (max-width:750px) {
- 
+
     /* containers */
- 
+
     #flex-container {
         display: block;
         width: 90%;
         height: 100%;
         margin: 5rem auto;
     }
- 
+
     /* sidebar */
- 
+
     aside {
         width: 100%;
         display: block;
         padding: 2rem;
     }
- 
+
     .about-icon {
         width: 6rem;
         height: 6rem;
         margin: 0 auto 2rem;
     }
- 
+
     img.about-icon {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
- 
+
     h1 {
         transform: rotate(0);
         writing-mode:horizontal-tb;
         margin:0 0 4rem
     }
- 
+
     h1:after {display: none;}
     
     h1 span {position: relative;}
- 
+
     h1 span:after {
         content: '';
         width: 30%;
@@ -305,30 +306,30 @@ img.about-image {
         position: absolute;
         inset: auto 0 -1rem auto;
     }
- 
+
     #sidebar-navigation {
         width: 100%;
         border: 0;
         margin: 0;
         padding:0;
     }
- 
+
     #sidebar-navigation li {
         margin: 0 1.5rem 0;
         display: inline-block;
         padding-bottom: .5rem;
     }
     #sidebar-navigation li:first-of-type {margin-top: 0;}
- 
+
     #sidebar-navigation li:after {
         content: '';
         width: 1.3rem;
         height: 1px;
         inset: auto 7px -.1rem auto;
     }
- 
+
     #sidebar-navigation li:first-of-type:after {display: block;}
- 
+
     /* main content */
   
     main {
@@ -339,19 +340,19 @@ img.about-image {
         max-height: 100%;
         padding-right: 0;
     }
- 
+
     #main-content {
         width: 100%;
         flex-direction: column;
         height: 100%;
         max-height: 100%;
     }
- 
+
     #main-navigation {
         height: 100%;
         padding: 2rem;
     }
- 
+
     #about {
         width: 100%;
         order: 2;
@@ -362,45 +363,56 @@ img.about-image {
         width: 100%;
         height: 15rem;
     }
- 
+
     img.about-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 }
- 
+
 </style>
-</head>
+<script
+    defer
+    type="application/javascript"
+    id="bilmur"
+    data-provider="tumblr.com"
+    data-service="blognetwork"
+    data-customproperties='{"theme": ""}'
+    nonce="d14poY1aF2kPFxe33u6Xibs7DgA"
+    src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202410"
+  ></script><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3"><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="Tumblr" /><meta property="og:title" content="Tumblr" /><meta property="og:url" content="https://southcodespreviews.tumblr.com/fashion" /><meta property="og:type" content="article" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=southcodespreviews&amp;postID=" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=southcodespreviews&amp;postID=" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="" /><meta name="twitter:title" content="SouthCodes&#039;s Previews" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=southcodespreviews&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=southcodespreviews&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=southcodespreviews&amp;referrer=twitter-cards" /><link rel="canonical" href="https://southcodespreviews.tumblr.com/fashion" /></head>
 <body>
- 
+
+<a target="blank_" href="https://pastebin.com/4ndC1Yhx" style="position:fixed;top:1rem;left:1rem;background:white;padding:.5rem .7rem;border-radius:4px;font-size:.9rem">get the code</a>
+
 <!-- change the color of the background square in the css variable --color-square -->
 <div id="color-square"></div>
- 
+
 <section id="flex-container"><main>
- 
+
     <aside>
- 
+
         <!-- icon image -->
- 
-        <figure class="about-icon"><img class="about-icon" src="ICON IMAGE URL" alt=""></figure>
- 
+
+        <figure class="about-icon"><img class="about-icon" src="https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJsdWUlMjBwaW5rfGVufDB8fDB8fHww" alt=""></figure>
+
         <!-- page title, keep it between <span></span> preferably not too long-->
- 
-        <h1><span>title.</span></h1>
- 
+
+        <h1><span>fashion.</span></h1>
+
         <!-- sidebar links -->
- 
+
         <nav id="sidebar-navigation"><ul>
-            <li><a href="LINK URL">LINK NAME</a></li>
-            <li><a href="LINK URL">LINK NAME</a></li>
-            <li><a href="LINK URL">LINK NAME</a></li>
-            <li><a href="LINK URL">LINK NAME</a></li>
+            <li><a href="LINK URL">coding</a></li>
+            <li><a href="LINK URL">writing</a></li>
+            <li><a href="LINK URL">music</a></li>
+            <li><a href="LINK URL">portfolio</a></li>
         </ul></nav>
     </aside>
- 
+
     <section id="main-inside">
- 
+
         <!-- topbar navigation -->
     
         <nav id="main-navigation"><ul>
@@ -409,47 +421,86 @@ img.about-image {
             
             <li><a href="/ask"><i class="nav-icon" data-feather="mail"></i></a></li>
             
-            <li><a href="https://www.tumblr.com/follow/{name}"><i class=" nav-icon" data-feather="plus"></i></a></li>
+            <li><a href="https://www.tumblr.com/follow/southcodespreviews"><i class=" nav-icon" data-feather="plus"></i></a></li>
             
         </ul></nav>
- 
+
         <div id="main-content">
- 
+
             <article id="about">
- 
+
                 <!-- details in the about -->
                 <ul id="about-details">
                     
-                    <li>detail</li>
-                    <li>detail</li>
-                    <li>detail</li>
-                    <li>detail</li>
+                    <li>skye</li>
+                    <li>twenty-six</li>
+                    <li>she/her</li>
+                    <li>argentina</li>
                 </ul>
                 
                 <!-- please wrap all your lines between <p>example</p> -->
- 
+
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex in quos quasi pariatur perferendis cumque dolore excepturi? Blanditiis debitis ea expedita minus ad ex atque, molestias, fuga, sit at maxime?</p>
- 
+
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex in quos quasi pariatur perferendis cumque dolore excepturi? Blanditiis debitis ea expedita minus ad ex atque, molestias, fuga, sit at maxime?</p>
- 
+
             </article>
- 
+
             <!-- about image -->
-            <figure class="about-image"><img class="about-image" src="IMAGE URL" alt=""></figure>
- 
+            <figure class="about-image"><img class="about-image" src="https://images.unsplash.com/photo-1488953994029-e6a7ba3348f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZSUyMHBpbmt8ZW58MHx8MHx8fDA%3D" alt=""></figure>
+
         </div>
- 
+
     </section>
- 
+
 </main></section> <!-- flex/main -->
- 
+
 <!-- do not touch -->
 <div style="position:fixed;bottom:2rem;right:2rem;z-index:999999999999999999999!important;font-size:.7rem;letter-spacing:.03rem;"><a href="https://southcodes.tumblr.com" title="coded by southcodes" style="color:black" target="_blank">SC</a></div>
- 
+
 <script src="https://unpkg.com/feather-icons@4.29.1/dist/feather.min.js"></script>
- 
+
 <script>
     feather.replace();
 </script>
-</body>
+
+<iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
+                              "https://southcodespreviews.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/fashion?route=custom_page'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script type="text/javascript" nonce="d14poY1aF2kPFxe33u6Xibs7DgA">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1709703780&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL3NvdXRoY29kZXNwcmV2aWV3cy50dW1ibHIuY29tL2Zhc2hpb24iLCJyZXF0eXBlIjowLCJyb3V0ZSI6ImN1c3RvbV9wYWdlIn0=&U=LFFELOABPC&K=0ced7509e9bd7d4df176e2135d036d364d07577432b24e324f3e178177d272b5&R=https%3A%2F%2Ftheme-hunter.tumblr.com%2F'.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1709703780&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL3NvdXRoY29kZXNwcmV2aWV3cy50dW1ibHIuY29tL2Zhc2hpb24iLCJyZXF0eXBlIjowLCJyb3V0ZSI6ImN1c3RvbV9wYWdlIiwibm9zY3JpcHQiOjF9&U=LFFELOABPC&K=ee2db0b4afb70a17fb7c336424ad5cd898151c9d337991da649ea1b604c2435c&R=https%3A%2F%2Ftheme-hunter.tumblr.com%2F"></noscript><noscript id="bootloader" data-bootstrap="{&quot;Components&quot;:{&quot;PostActivity&quot;:[],&quot;NotificationPoller&quot;:{&quot;messaging_keys&quot;:[],&quot;token&quot;:&quot;&quot;,&quot;inbox_unread&quot;:0},&quot;DesktopDashboardLogo&quot;:{&quot;animations&quot;:[[&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1.png?_v=161861acded461bb6e995593a3bae835&quot;,&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1@2x.png?_v=496a774637302a598c851381d00009b0&quot;]]},&quot;TumblelogIframe&quot;:{&quot;unified&quot;:true,&quot;variant&quot;:null,&quot;isCompact&quot;:true,&quot;tumblelogBundleSrc&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/standalone\/tumblelog\/index.build.js?_v=67fbead607764bb56fdea64cc12b80d7&quot;,&quot;tumblelogName&quot;:&quot;southcodespreviews&quot;,&quot;isLoggedIn&quot;:false,&quot;isFriend&quot;:false,&quot;formKey&quot;:&quot;&quot;,&quot;canSubscribe&quot;:false,&quot;isSubscribed&quot;:false,&quot;tumblelogTitle&quot;:&quot;SouthCodes&#039;s Previews&quot;,&quot;tumblelogAvatar&quot;:&quot;https:\/\/assets.tumblr.com\/images\/default_avatar\/pyramid_closed_64.png&quot;,&quot;tumblelogAvatar128&quot;:&quot;https:\/\/assets.tumblr.com\/images\/default_avatar\/pyramid_closed_128.png&quot;,&quot;tumblelogHost&quot;:&quot;https:\/\/southcodespreviews.tumblr.com&quot;,&quot;hasCustomDomain&quot;:false,&quot;isOptica&quot;:false,&quot;isCustomTheme&quot;:true,&quot;themeHeaderImage&quot;:&quot;https:\/\/64.media.tumblr.com\/2487115842824a439cc5b93d19375ca6\/5d05c474c1b17e9a-f9\/s2048x3072\/90418e841765c0811800bf0ae78d88e5f35f2f8d.png&quot;,&quot;themeBackgroundColor&quot;:&quot;#FFFFFF&quot;,&quot;themeTitleColor&quot;:&quot;#000000&quot;,&quot;themeAccentColor&quot;:&quot;#00B8FF&quot;,&quot;brag&quot;:true,&quot;canShowAd&quot;:true,&quot;isPremium&quot;:false,&quot;showLrecAds&quot;:false,&quot;showStickyLrecBackfill&quot;:false,&quot;showGeminiAds&quot;:false,&quot;geminiSectionCodeDesktop&quot;:&quot;a10bca9c-0c5d-4a02-ab13-14ab8513d81d&quot;,&quot;geminiSectionCodeMobile&quot;:&quot;ced63809-b609-4aca-96a0-abc099acba6b&quot;,&quot;currentPageType&quot;:null,&quot;currentPage&quot;:false,&quot;searchQuery&quot;:&quot;&quot;,&quot;tag&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;chrono&quot;:false,&quot;postId&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/southcodespreviews.tumblr.com\/fashion&quot;,&quot;postUrl&quot;:&quot;&quot;,&quot;openInPeeprUrl&quot;:&quot;https:\/\/www.tumblr.com\/southcodespreviews&quot;,&quot;isBlocked&quot;:null,&quot;isAdmin&quot;:false,&quot;lookupButtonUrl&quot;:&quot;&quot;,&quot;showSpamButton&quot;:false,&quot;showRootPostButton&quot;:false,&quot;rootPostUrl&quot;:&quot;&quot;,&quot;showRadarPostButton&quot;:false,&quot;radarKeys&quot;:&quot;&quot;,&quot;isUniblocked&quot;:false,&quot;isNsfw&quot;:false,&quot;isAdult&quot;:false,&quot;isSpam&quot;:false,&quot;isPrimaryBlog&quot;:false,&quot;canEdit&quot;:false,&quot;canReblogSelf&quot;:false,&quot;showLikeButton&quot;:false,&quot;showReblogButton&quot;:false,&quot;reblogUrl&quot;:&quot;&quot;,&quot;showMessagingButton&quot;:false,&quot;loginCheckIframeSrc&quot;:&quot;https:\/\/assets.tumblr.com\/assets\/html\/iframe\/login_check.html?_v=3de94a184d600617102ddd5b48fb36e9&quot;,&quot;appInstallUrls&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_continue_or_install_cta&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_continue_or_install_cta\u0026mt=8&quot;},&quot;appOpenReferrer&quot;:&quot;bn_header_open_btn&quot;,&quot;isShowSearch&quot;:true,&quot;supplyLogging&quot;:[],&quot;secondsSinceLastActivity&quot;:7199,&quot;installUrlOpenFailed&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_header_app_open_failed&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_header_app_open_failed\u0026mt=8&quot;},&quot;loginWallVariant&quot;:&quot;small_center&quot;},&quot;CommunityLabels&quot;:{&quot;has_community_label&quot;:false,&quot;is_single&quot;:true,&quot;redirect_target&quot;:null}},&quot;Flags&quot;:{&quot;features&quot;:&quot;eyJmaWx0ZXJfbnNmdyI6dHJ1ZSwibW9iaWxlX3dlYl9nYXRlIjp0cnVlLCJzYWZlX21vZGUiOnRydWUsInNhZmVfbW9kZV9lbmFibGVkIjp0cnVlLCJrZXljb21tYW5kX2F1dG9fcGFnaW5hdGUiOnRydWUsImxvZ2dlZF9vdXRfc2VhcmNoIjp0cnVlLCJrcmFrZW5fd2ViX2xvZ2dpbmdfbGlicmFyeSI6dHJ1ZSwibGl2ZXBob3Rvc193ZWIiOnRydWUsInVzZXJfdGFnX2ZpbHRlcmluZyI6dHJ1ZSwic2FmZV9tb2RlX293bl9wb3N0Ijp0cnVlLCJwcm9qZWN0X3hfYXBwZWFsIjp0cnVlLCJtb2JpbGVfd2ViX3Bob3Rvc2V0cyI6dHJ1ZSwiaGlkZV9kZWZhdWx0X2hlYWRlcnNfYmxvZ19jYXJkcyI6dHJ1ZSwibm90aWZpY2F0aW9uX3JlcGx5X2xpbmtfdG9fbm90ZXMiOnRydWUsInR5cGluZ19pbmRpY2F0b3Jfd3JpdGUiOnRydWUsInR1bWJscl92aWRlb19zcG9uc29yZWRfZGF5Ijp0cnVlLCJjYXB0Y2hhOnVzZV9yZWNhcHRjaGEyIjp0cnVlLCJsaXR0bGVfc2lzdGVyIjp0cnVlLCJsb2dfbGFkeSI6dHJ1ZSwicmVkcG9wX3Bvc3RfZm9ybV9tb2JpbGVfY3JlYXRlIjp0cnVlLCJsZWdhY3lfcG9zdF9mb3JtX2J1dHRvbnNfbGlua190b19yZWRwb3AiOnRydWUsInNob3dfdHNwX2NsaWNrX3Rocm91Z2hfdG9nZ2xlIjp0cnVlLCJkYXJsYV9hZF9mZWVkYmFjayI6dHJ1ZSwic3RhdHVzX2luZGljYXRvciI6dHJ1ZSwiY29udmVyc2F0aW9uYWxfbm90aWZpY2F0aW9ucyI6dHJ1ZSwiZGlzYWJsZV95YWhvb19iX2Nvb2tpZSI6dHJ1ZSwibGl2ZXBob3RvcyI6dHJ1ZSwiY29tbXVuaXR5X2xhYmVscyI6dHJ1ZX0=&quot;},&quot;Context&quot;:{&quot;name&quot;:&quot;default&quot;,&quot;time&quot;:1709703780000,&quot;userinfo&quot;:{&quot;primary&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;channels&quot;:[]},&quot;hosts&quot;:{&quot;assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;secure_assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;secure_www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;embed_host&quot;:&quot;https:\/\/embed.tumblr.com&quot;,&quot;safe_host&quot;:&quot;https:\/\/safe.txmblr.com&quot;,&quot;platform_host&quot;:&quot;https:\/\/platform.tumblr.com&quot;},&quot;language&quot;:&quot;en_US&quot;,&quot;language_simple&quot;:&quot;en&quot;,&quot;assets&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/&quot;},&quot;Translations&quot;:{&quot;%1$sReport %2$s&#039;s post?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sReport %2$s&#039;s reply?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$sReport %2$s&#039;s reblog?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;,&quot;%1$sDelete your tip??%2$s&quot;:&quot;%1$sDelete your tip?%2$s&quot;,&quot;Deleting your tip&quot;:&quot;Deleting your tip will only remove it from the replies tab and notes. %1$sYou won&#039;t receive a refund of your tip.%2$s For further help contact %3$sTumblr Support%4$s.&quot;}}"></noscript><script src="https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=67fbead607764bb56fdea64cc12b80d7"></script></body>
 </html>
