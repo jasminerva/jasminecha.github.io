@@ -217,7 +217,6 @@ box-shadow: 0 -10px inset var(--Accent);
                 padding: 20px;
                 overflow-y: scroll;
                 overflow-x: hidden;
-                max-height: calc(100% - 180px);
             }
  
             #about-text::-webkit-scrollbar {
