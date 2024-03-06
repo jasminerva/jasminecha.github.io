@@ -139,12 +139,12 @@
 
 #custom-links ul li.active {
 list-style-type: none;
-text-decoration: underline;
+box-shadow: 0 -10px inset var(--Accent);
 }
 
 #custom-links ul li:hover{
 list-style-type: none;
-text-decoration: underline;
+box-shadow: 0 -10px inset var(--Accent);
 }
 
             .other-links {
