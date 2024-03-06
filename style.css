@@ -156,10 +156,12 @@ box-shadow: 0 -10px inset var(--Accent);
             }
  
             #custom-links a {
+                display: block;
 		list-style-type: none;
-                margin-right: 8px;
                 margin-bottom: 8px;
                 min-width: 50px;
+    margin-left: auto;
+    margin-right: auto;
             }
  
             #about {
